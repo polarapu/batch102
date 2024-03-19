@@ -34,3 +34,47 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
           new file:   test-mutyalu/test1
 	          new file:   test-mutyalu/test2
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+$ git commit -m "files added in directory with actions file"
+[main 5da8cf5] files added in directory with actions file
+ 3 files changed, 36 insertions(+)
+  create mode 100644 test-mutyalu/actions
+   create mode 100644 test-mutyalu/test1
+    create mode 100644 test-mutyalu/test2
+
+    Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+    $ git push
+    To https://github.com/polarapu/batch102.git
+     ! [rejected]        main -> main (fetch first)
+     error: failed to push some refs to 'https://github.com/polarapu/batch102.git'
+     hint: Updates were rejected because the remote contains work that you do not
+     hint: have locally. This is usually caused by another repository pushing to
+     hint: the same ref. If you want to integrate the remote changes, use
+     hint: 'git pull' before pushing again.
+     hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+     Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+     $ git pull --rebase
+     remote: Enumerating objects: 25, done.
+     remote: Counting objects: 100% (25/25), done.
+     remote: Compressing objects: 100% (17/17), done.
+     remote: Total 23 (delta 9), reused 17 (delta 4), pack-reused 0
+     Unpacking objects: 100% (23/23), 2.05 KiB | 7.00 KiB/s, done.
+     From https://github.com/polarapu/batch102
+        19ef99c..b477014  main       -> origin/main
+	Successfully rebased and updated refs/heads/main.
+
+	Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+	$ git push
+	Enumerating objects: 6, done.
+	Counting objects: 100% (6/6), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (4/4), done.
+	Writing objects: 100% (4/4), 778 bytes | 97.00 KiB/s, done.
+	Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+	remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+	To https://github.com/polarapu/batch102.git
+	   b477014..e217de3  main -> main
+
+	   Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+	   
