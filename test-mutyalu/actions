@@ -1,0 +1,36 @@
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+$ ls
+Abhilash  dir3/  file2  file5  file9     kal/      kalyani3  prasad     test2  test5
+dir1/     dir4/  file3  file6  jashu/    kalyani   mutyalu   README.md  test3  test-mutyalu/
+dir2/     file1  file4  file8  jaswanth  kalyani2  nani1     test1      test4
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+$ cd test-mytyalu
+bash: cd: test-mytyalu: No such file or directory
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+$ cd test-mutyalu
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102/test-mutyalu (main)
+$ ls
+file1  file2
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102/test-mutyalu (main)
+$ touch test1 test2
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102/test-mutyalu (main)
+$ cd ..
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+$ git add .
+
+Hi@DESKTOP-85CN1LA MINGW64 /d/DevOps/Test/batch102 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+          new file:   test-mutyalu/test1
+	          new file:   test-mutyalu/test2
